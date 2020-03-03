@@ -74,7 +74,36 @@
                                 <div class="m-3 p-3">
                                 <div class="row row-cols-1 row-cols-md-5">
                                 <div class="col mb-4">
-                                  <div class="card">
+                                  <div class="card" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                      <div class="modal-content p-3">
+
+
+                                        <div class="card p-3" >
+                                        <img src="comp.png" class="rounded mx-auto d-block" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Cras justo odio</li>
+                                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                                          <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Card link</a>
+                                          <a href="#" class="card-link">Another link</a>
+                                        </div>
+                                        </div>
+
+
+
+
+
+                                      </div>
+                                    </div>
+                                  </div>
                                     <img src="comp.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                       <h5 class="card-title">Card title</h5>
@@ -155,6 +184,101 @@
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
+                    <div class="p-3">
+                      <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Post New Job</button>
+                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg p-3" role="document">
+                          <div class="modal-content p-3">
+                            <form class="m-5">
+                                  <h4 class="display-4">Fill Job Details</h4><br>
+                                  <input class="form-control" type="text" placeholder="Company Name" readonly><br>
+                                  <div class="form-row">
+                                  <div class="col">
+                                    <input type="text" class="form-control" placeholder="Job Title">
+                                  </div>
+                                  <div class="col">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"><br>
+                                    <option selected>Domain</option>
+                                    <option value="1">Software Engineering</option>
+                                    <option value="2">Marketing</option>
+                                    <option value="3">Management</option>
+                                    <option value="3">Fianance</option>
+                                    <option value="3">Web Developer</option>
+                                  </select><br>
+                                  </div>
+                                </div><br>
+                                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"><br>
+                                  <option selected>Job Type</option>
+                                  <option value="1">Part Time</option>
+                                  <option value="2">Full time</option>
+                                  <option value="3">Internship</option>
+                                </select><br>
+                                <br>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Job Desciption"></textarea>
+                                <br>
+                                <div class="form-row">
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Location">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="ZipCode">
+                                </div>
+                              </div><br>
+                              <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">₹</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Salary">
+                              <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post Job</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="card text-center m-3">
+                      <div class="card-header">
+                        Human Resource Manager
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">51 People Applied To this Job Listing</p>
+                        <button type="button" class="btn btn-danger">Delete Job Listing</button>
+                      </div>
+                      <div class="card-footer text-muted">
+                        2 days ago
+                      </div>
+                    </div>
+                    <div class="card text-center m-3">
+                    <div class="card-header">
+                      Software Engineer
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">51 People Applied To this Job Listing</p>
+                      <button type="button" class="btn btn-danger">Delete Job Listing</button>
+                    </div>
+                    <div class="card-footer text-muted">
+                      2 days ago
+                    </div>
+                  </div>
+                  <div class="card text-center m-3">
+                  <div class="card-header">
+                    Marketing Team
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">51 People Applied To this Job Listing</p>
+                    <button type="button" class="btn btn-danger">Delete Job Listing</button>
+                  </div>
+                  <div class="card-footer text-muted">
+                    2 days ago
+                  </div>
+                </div>
 
 
 
@@ -162,6 +286,9 @@
 
 
 
+
+
+                    </div>
                     </div>
                   </div>
           </div>
