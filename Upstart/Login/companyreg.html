@@ -25,6 +25,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -38,7 +41,7 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email" placeholder="Company Email">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
@@ -56,16 +59,16 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid Registration No required">
-						<input class="input100" type="text" name="C=regno" placeholder="Company Rgistration Number">
+						<input class="input100" type="text" name="C=regno" placeholder="Company Identification Number">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid Number Required">
-						<input class="input100" type="tel" name="no" placeholder="Contact Number">
-						<span class="focus-input100-1"></span>
-						<span class="focus-input100-2"></span>
-					</div>
+					<div class="custom-file">
+    				<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    				<label class="custom-file-label" for="validatedCustomFile">Company Incorporation Certificate</label>
+    				<div class="invalid-feedback">Example invalid custom file feedback</div>
+  				</div>
 
 					<div class="container-login100-form-btn m-t-20">
 						<button class="login100-form-btn">
