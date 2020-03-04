@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">UpStart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Jobs <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recruite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Invest</a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="#">Ideas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Forum</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav my-2 my-sm-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="p-3">
+
+    <div class="card text-center ">
+      <div class="card-header mb-0 pb-0">
+        <ul class="nav nav-tabs justify-content-center nav-fill" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Apply for New Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Applied Job</a>
+          </li>
+        </ul>
+      </div>
+        <div class="tab-content m-3 justify-content-left" id="myTabContent">
+          <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row mx-auto mb-4 justify-content-left">
+            <div class="col"><h1>Filter</h1></div>
+            <div class="col">
+
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Domain
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">IT</a>
+                <a class="dropdown-item" href="#">Finance</a>
+                <a class="dropdown-item" href="#">Management</a>
+              </div>
+
+            </div>
+            <div class="col">
+
+              <!-- Search form -->
+              <input class="form-control" type="text" placeholder="Location" aria-label="Search">
+
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Years of Experience">
+
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">₹</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Salary">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-block">Search</button>
+            </div>
+            </div>
+            <!-- End of Search filter -->
+            <div class="m-auto">
+                  <div class="card m-4">
+                  <h5 class="card-header">Shaalastic LLP</h5>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Marketing Head</h5>
+                    <p class="card-text">skills req/People with Good Communication Skills and Experience in Marketing</p>
+                    <p class="card-text">2-4 Years of Experience</p>
+                    <p class="card-text">Full Time</p>
+                    <p class="card-text">Mumbai</p>
+                    <h5>Salary 25000/-</h5>
+                    <button type="button" class="btn btn-success mt-3 ">Apply</button>
+                  </div>
+          </div>
+          </div>
+          <div class=" m-auto">
+                <div class="card m-4">
+                <h5 class="card-header">Shaalastic LLP</h5>
+
+                <div class="card-body">
+                  <h5 class="card-title">Marketing Head</h5>
+                  <p class="card-text">People with Good Communication Skills and Experience in Marketing</p>
+                  <p class="card-text">2-4 Years of Experience</p>
+                  <p class="card-text">Full Time</p>
+                  <p class="card-text">Mumbai</p>
+                  <h5>Salary 25000/-</h5>
+                  <button type="button" class="btn btn-success mt-3 ">Apply</button>
+                </div>
+        </div>
+        </div>
+        <div class="m-auto">
+              <div class="card m-4">
+              <h5 class="card-header">Shaalastic LLP</h5>
+
+              <div class="card-body">
+                <h5 class="card-title">Marketing Head</h5>
+                <p class="card-text">People with Good Communication Skills and Experience in Marketing</p>
+                <p class="card-text">2-4 Years of Experience</p>
+                <p class="card-text">Full Time</p>
+                <p class="card-text">Mumbai</p>
+                <h5>Salary 25000/-</h5>
+                <button type="button" class="btn btn-success mt-3 ">Apply</button>
+              </div>
+      </div>
+    </div>
+      </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                        <div class="card border-warning m-3">
+                        <div class="card-header">
+                          Shaalastic LLP
+                        </div>
+                        <div class="card-body ">
+                          <h5 class="card-title">Marketing Head</h5>
+                          <p>Applied 6 Days Ago</p>
+                          <h5 class="text-warning">Pending</h5>
+                        </div>
+                      </div>
+                      <div class="card border-success m-3">
+                      <div class="card-header">
+                        Shaalastic LLP
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Marketing Head</h5>
+                        <p>Applied 6 Days Ago</p>
+                        <h5 class="text-success">Selected</h5>
+                      </div>
+                    </div>
+                    <div class="card border-danger m-3">
+                    <div class="card-header">
+                      Shaalastic LLP
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Marketing Head</h5>
+                      <p>Applied 6 Days Ago</p>
+                      <h5 class="text-danger">Rejected</h5>
+                    </div>
+                  </div>
+
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
